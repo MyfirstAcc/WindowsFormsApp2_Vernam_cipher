@@ -1,1 +1,1 @@
-Encryption/decryption with a disposable notepad
+Encryption/decryption with an One-time pad
