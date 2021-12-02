@@ -1,1 +1,1 @@
-WindowsFormsApp2_Vernam_cipher
+Encryption/decryption with a disposable notepad
