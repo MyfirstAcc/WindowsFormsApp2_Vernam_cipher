@@ -7,9 +7,11 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1
 {
+    /// <summary>
+    /// класс шифрования One-time pad
+    /// </summary>
     public class VernamCipher
     {
-        private static Regex RgxKey = new Regex(@"^(\d+\s?)+$");
         private readonly Alphabet alp;
         private Dictionary<char, int> alpDictionary;
         public VernamCipher(Alphabet alp)
@@ -23,6 +25,12 @@ namespace WindowsFormsApp1
             }
 
         }
+        /// <summary>
+        /// алгоритм взят с https://en.wikipedia.org/wiki/One-time_pad 
+        /// </summary>
+        /// <param name="message"> сообщение</param>
+        /// <param name="key">ключ</param>
+        /// <returns>криптограмма</returns>
         public string Encrypt(string message, string key)
         {
 
@@ -36,7 +44,12 @@ namespace WindowsFormsApp1
             }
             return C;
         }
-
+        /// <summary>
+        /// алгоритм взят с https://en.wikipedia.org/wiki/One-time_pad 
+        /// </summary>
+        /// <param name="message"></param>
+        /// <param name="key"></param>
+        /// <returns>зашифрованное сообщение</returns>
         public string Decrypt(string message, string key)
         {
             string M = string.Empty;

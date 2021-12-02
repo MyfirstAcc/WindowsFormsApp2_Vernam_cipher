@@ -77,15 +77,16 @@
             // 
             // textBoxMessage
             // 
+            this.textBoxMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxMessage.Location = new System.Drawing.Point(17, 43);
             this.textBoxMessage.Name = "textBoxMessage";
-            this.textBoxMessage.Size = new System.Drawing.Size(230, 22);
+            this.textBoxMessage.Size = new System.Drawing.Size(230, 27);
             this.textBoxMessage.TabIndex = 1;
             this.textBoxMessage.Validated += new System.EventHandler(this.textBoxMessage_Validated);
             // 
             // textBoxDigit
             // 
-            this.textBoxDigit.Location = new System.Drawing.Point(17, 128);
+            this.textBoxDigit.Location = new System.Drawing.Point(17, 141);
             this.textBoxDigit.Name = "textBoxDigit";
             this.textBoxDigit.Size = new System.Drawing.Size(230, 22);
             this.textBoxDigit.TabIndex = 3;
@@ -93,7 +94,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(14, 109);
+            this.label2.Location = new System.Drawing.Point(14, 122);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(153, 16);
             this.label2.TabIndex = 4;
@@ -101,17 +102,17 @@
             // 
             // textBoxKey
             // 
-            this.textBoxKey.Location = new System.Drawing.Point(17, 84);
+            this.textBoxKey.Location = new System.Drawing.Point(17, 97);
             this.textBoxKey.Name = "textBoxKey";
             this.textBoxKey.Size = new System.Drawing.Size(230, 22);
-            this.textBoxKey.TabIndex = 5;
+            this.textBoxKey.TabIndex = 2;
             this.textBoxKey.Validating += new System.ComponentModel.CancelEventHandler(this.textBoxKey_Validating);
             this.textBoxKey.Validated += new System.EventHandler(this.textBoxKey_Validated);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(17, 65);
+            this.label3.Location = new System.Drawing.Point(17, 78);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(44, 16);
             this.label3.TabIndex = 6;
@@ -119,25 +120,25 @@
             // 
             // textBoxCript
             // 
-            this.textBoxCript.Location = new System.Drawing.Point(17, 172);
+            this.textBoxCript.Location = new System.Drawing.Point(17, 185);
             this.textBoxCript.Name = "textBoxCript";
             this.textBoxCript.Size = new System.Drawing.Size(230, 22);
-            this.textBoxCript.TabIndex = 8;
+            this.textBoxCript.TabIndex = 4;
             // 
             // textBoxDecript
             // 
             this.textBoxDecript.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxDecript.Location = new System.Drawing.Point(18, 76);
+            this.textBoxDecript.Location = new System.Drawing.Point(18, 59);
             this.textBoxDecript.Name = "textBoxDecript";
             this.textBoxDecript.Size = new System.Drawing.Size(230, 27);
-            this.textBoxDecript.TabIndex = 9;
+            this.textBoxDecript.TabIndex = 1;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(66, 104);
+            this.button1.Location = new System.Drawing.Point(66, 92);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(119, 28);
-            this.button1.TabIndex = 11;
+            this.button1.TabIndex = 2;
             this.button1.Text = "Расшифровка";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -148,6 +149,8 @@
             // 
             // listView1
             // 
+            this.listView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(45, 25);
             this.listView1.Name = "listView1";
@@ -158,6 +161,8 @@
             // 
             // label4
             // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(42, 6);
             this.label4.Name = "label4";
@@ -180,6 +185,9 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.splitContainer1);
             this.groupBox1.Location = new System.Drawing.Point(272, 134);
             this.groupBox1.Name = "groupBox1";
@@ -244,7 +252,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(14, 153);
+            this.label5.Location = new System.Drawing.Point(14, 166);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(105, 16);
             this.label5.TabIndex = 17;
@@ -253,7 +261,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(19, 57);
+            this.label6.Location = new System.Drawing.Point(19, 40);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(101, 16);
             this.label6.TabIndex = 18;
@@ -271,19 +279,21 @@
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Location = new System.Drawing.Point(8, 134);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(258, 208);
+            this.groupBox2.Size = new System.Drawing.Size(258, 234);
             this.groupBox2.TabIndex = 19;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Шифровка";
             // 
             // groupBox3
             // 
+            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Controls.Add(this.textBoxDecript);
             this.groupBox3.Controls.Add(this.button1);
-            this.groupBox3.Location = new System.Drawing.Point(7, 349);
+            this.groupBox3.Location = new System.Drawing.Point(7, 374);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(259, 179);
+            this.groupBox3.Size = new System.Drawing.Size(259, 154);
             this.groupBox3.TabIndex = 20;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Расшифровка";
@@ -302,12 +312,14 @@
             // 
             // toolStripStatusLabel1
             // 
+            this.toolStripStatusLabel1.ForeColor = System.Drawing.Color.Red;
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(108, 20);
             this.toolStripStatusLabel1.Text = "Размер блока:";
             // 
             // toolStripStatusLabel2
             // 
+            this.toolStripStatusLabel2.ForeColor = System.Drawing.Color.Red;
             this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
             this.toolStripStatusLabel2.Size = new System.Drawing.Size(0, 20);
             // 
