@@ -57,9 +57,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WindowsFormsApp1\WindowsFormsApp1.csproj">
+    <ProjectReference Include="..\WindowsFormsApp1\WindowsFormsApp.csproj">
       <Project>{FCD992B5-8D45-4C57-9B8C-96FB203B1FA3}</Project>
-      <Name>WindowsFormsApp1</Name>
+      <Name>WindowsFormsApp</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
